@@ -31,7 +31,7 @@ public class JpaConfiguration {
                 new LocalContainerEntityManagerFactoryBean();
 
         emf.setDataSource(dataSource);
-        emf.setPackagesToScan("ru.ivmiit.mvc.models");
+        emf.setPackagesToScan("models");
 
         HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         adapter.setDatabase(Database.POSTGRESQL);
